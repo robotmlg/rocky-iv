@@ -17,10 +17,10 @@
 
 //Wait for user to shake
 #define WAIT_FOR_SHAKE()	HTACreadAllAxes(hand,x,y,z);\
-													squaresum=(x/10)*(x/10)+(y/10)*(y/10)+(z/10)*(z/10);\
-													while(squaresum<SHAKE_TH){\
-														squaresum=(x/10)*(x/10)+(y/10)*(y/10)+(z/10)*(z/10);\
-														HTACreadAllAxes(hand,x,y,z);}
+							squaresum=(x/10)*(x/10)+(y/10)*(y/10)+(z/10)*(z/10);\
+							while(squaresum<SHAKE_TH){\
+								squaresum=(x/10)*(x/10)+(y/10)*(y/10)+(z/10)*(z/10);\
+								HTACreadAllAxes(hand,x,y,z);}
 
 //enum type for hand positions
 enum{
